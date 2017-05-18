@@ -2,7 +2,7 @@
 
 :provenance {
 	:assertion prov:wasGeneratedBy analysis:1 ;
-		prov:wasAttributedTo orcid:0000-0002-7990-1324 .
+		prov:wasAttributedTo orcid:0000-0002-7990-1324 , orcid:0000-0002-2759-8079 .
 }
 
 :pubinfo {

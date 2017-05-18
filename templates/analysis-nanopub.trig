@@ -31,11 +31,13 @@
 		rdfs:seeAlso <https://doi.org/10.1016/j.ebiom.2016.01.027> .
 	analysis:1 a atlas:DifferentialExpressionAnalysis ;
 		atlas:isImplementedBy <https://bioconductor.org/packages/release/bioc/html/limma.html> ;
-		prov:used geo:GSE72554 .
+		prov:used geo:GSE72554 ;
+		rdfs:seeAlso <https://doi.org/10.1152/ajprenal.00653.2016> ;
+		dct:description "We introduce the PKD Signature, a set of 1,515 genes that are commonly dysregulated in PKD studies. We show that the signature genes include many known and novel PKD-related genes and functions. Moreover, genes with a role in injury repair, as evidenced by expression data and/or automated literature analysis, were significantly enriched in the PKD Signature, with 35% of the PKD Signature genes being directly implicated in injury repair." .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo orcid:0000-0002-7990-1324 .
+	:assertion prov:wasAttributedTo orcid:0000-0002-7990-1324 , orcid:0000-0002-2759-8079 .
 }
 
 :pubinfo {
