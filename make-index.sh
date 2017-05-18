@@ -7,4 +7,4 @@ np mkindex \
   -c '0000-0002-7990-1324' \
   -a 'https://doi.org/10.1152/ajprenal.00653.2016' \
   -o nanopubs/trusty.combined-index.trig \
-  nanopubs/combined-nanopubs.trig
+  nanopubs/trusty.combined-nanopubs.trig

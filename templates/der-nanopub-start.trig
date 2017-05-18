@@ -13,6 +13,7 @@
 @prefix ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/> .
 @prefix atlas: <http://rdf.ebi.ac.uk/terms/atlas/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix wp: <http://vocabularies.wikipathways.org/wp#> .
 
 :Head {
 	: np:hasAssertion :assertion ;
