@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/fairified/pkd/#nanopub-ROW> .
+@prefix : <http://purl.org/nanopub/temp/fairified-pkd/ROW> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -13,7 +13,6 @@
 @prefix ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/> .
 @prefix atlas: <http://rdf.ebi.ac.uk/terms/atlas/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;

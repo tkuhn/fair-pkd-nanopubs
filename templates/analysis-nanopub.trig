@@ -1,0 +1,47 @@
+@prefix : <http://purl.org/nanopub/temp/fairified-pkd/analysis> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <http://orcid.org/> .
+@prefix adjpval: <http://purl.org/fairified/pkd/#adjPvalue/> .
+@prefix analysis: <http://purl.org/fairified/pkd/#analysis/> .
+@prefix experiment: <http://purl.org/fairified/pkd/#experiment/> .
+@prefix der: <http://purl.org/fairified/pkd/#differentialExpressionRatio/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/> .
+@prefix atlas: <http://rdf.ebi.ac.uk/terms/atlas/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix geo: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=> .
+@prefix dbpedia: <http://nl.dbpedia.org/resource/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	experiment:1 a atlas:Experiment ;
+		atlas:hasAnalysis analysis:1 ;
+		atlas:isAbout obo:NCBITaxon_10090 ;
+		rdfs:seeAlso <https://doi.org/10.1016/j.ebiom.2016.01.027> .
+	analysis:1 a atlas:DifferentialExpressionAnalysis ;
+		atlas:isImplementedBy <https://bioconductor.org/packages/release/bioc/html/limma.html> ;
+		prov:used geo:GSE72554 .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo orcid:0000-0002-7990-1324 .
+}
+
+:pubinfo {
+	: dct:created "2017-05-18T14:02:00+02:00"^^xsd:dateTime ;
+		dct:license <https://creativecommons.org/share-your-work/public-domain/cc0/> ;
+		pav:createdBy orcid:0000-0002-1267-0234 , orcid:0000-0002-2759-8079 , orcid:0000-0002-7990-1324 ,
+			orcid:0000-0003-4818-2360 , orcid:0000-0002-1215-167X .
+}
+
