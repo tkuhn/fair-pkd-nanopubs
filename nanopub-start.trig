@@ -1,0 +1,25 @@
+@prefix : <http://purl.org/fairified/pkd/#nanopub-ROW> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <http://orcid.org/> .
+@prefix adjpval: <http://purl.org/fairified/pkd/#adjPvalue/> .
+@prefix analysis: <http://purl.org/fairified/pkd/#analysis/> .
+@prefix der: <http://purl.org/fairified/pkd/#differentialExpressionRatio/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/> .
+@prefix atlas: <http://rdf.ebi.ac.uk/terms/atlas/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {

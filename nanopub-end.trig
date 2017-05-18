@@ -1,0 +1,13 @@
+}
+
+:provenance {
+	:assertion prov:wasGeneratedBy ex:analysis ;
+		prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+	: dct:created "2017-05-17T15:13:00+02:00"^^xsd:dateTime ;
+		dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
+}
+
